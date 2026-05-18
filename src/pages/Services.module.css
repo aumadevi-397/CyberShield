@@ -1,0 +1,165 @@
+/* Color Variables & Base Styling */
+.pageContainer {
+  background-color:white;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Layout Main Frame */
+.mainContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.introSection {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.mainTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: navy;
+}
+
+/* .highlight {
+  color;
+} */
+
+.subtitle {
+  color: black;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* Grid Layout for Cards */
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+/* Cards Design Structure */
+.serviceCard {
+  background-color:black;
+  /* border: 3px solid aqua; */
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+}
+
+.serviceCard:hover {
+  /* border-color: rgba(0, 229, 255, 0.3); */
+  transform: translateY(-4px);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.cardIcon {
+  background-color: rgba(0, 255, 204, 0.1);
+  color: #00ffcc;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1.25rem;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.cardDescription {
+  color:white;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.featureList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.featureItem {
+  /* color:aqua; */
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bullet {
+  color:white;
+}
+
+.learnMoreBtn {
+  background-color: #00e5ff;
+  color: #030014;
+  border: none;
+  border-radius: 20px;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+.learnMoreBtn:hover {
+  background-color: #00ccff;
+}
+
+/* Call to Action Container */
+.ctaContainer {
+  background: black;
+  /* border: 1px solid rgba(0, 229, 255, 0.2); */
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.ctaContainer h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.ctaContainer p {
+  color: #a0a0ba;
+  margin-bottom: 25px;
+}
+
+.ctaButton {
+  background-color:#00ccff;
+  color: #030014;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.ctaButton:hover {
+  transform: scale(1.02);
+}

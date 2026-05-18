@@ -1,0 +1,91 @@
+.header {
+  width: 100%;
+  background: #020225;
+  border-bottom: 1px solid #1a2233;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  height: 64px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.logoIcon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #22d3ee, #a855f7);
+}
+
+/* NAV LINKS */
+.navLinks {
+  display: flex;
+  gap: 28px;
+}
+
+.navLinks a {
+  color:white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* RIGHT SIDE */
+.right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* MOBILE MENU BUTTON */
+.menuBtn {
+  display: none;
+  font-size: 22px;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* MOBILE MENU */
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px 20px;
+  border-top: 1px solid #1a2233;
+  background: #070a12;
+
+}
+
+.mobileMenu a {
+  color: #b6c2d9;
+  text-decoration: none;
+  
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .navLinks,
+  .searchBox {
+    display: none;
+  }
+
+  .menuBtn {
+    display: block;
+  }
+}

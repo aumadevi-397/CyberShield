@@ -1,0 +1,56 @@
+
+.footer {
+  background-color: #020225;
+  padding: 80px 40px 20px;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 60px;
+}
+
+.heading {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.list {
+  list-style: none;   
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  display: block;
+  text-decoration: none;   
+  color: #8b97b5;          
+  font-size: 17px;
+  margin-bottom: 18px;
+  transition: 0.3s;
+}
+
+.link:hover {
+  color: white;
+}
+
+.divider {
+  margin-top: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 900px) {
+  .columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+}

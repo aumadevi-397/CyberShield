@@ -1,0 +1,86 @@
+.page {
+  background:navy;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 span {
+  color: #00d9ff;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 10px auto;
+  color:white;
+}
+
+/* MISSION */
+.mission {
+  padding: 40px;
+}
+
+.mission h2 {
+  margin-bottom: 10px;
+}
+
+.mission p {
+  color:black;
+  max-width: 800px;
+  font-family: 'Times New Roman', Times, serif;
+}
+#para{
+  color: white;
+  font-style:normal;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background:lightyellow;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.card h3 {
+  color:black;
+  font-size: 28px;
+}
+
+/* VALUES */
+.values {
+  padding: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.valueCard {
+  background:lightyellow;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #2a1b3d;
+}
+
+.valueCard h4 {
+  color: black;
+}
+.valueCard p{
+  color:navy;
+  padding-top: 10px;
+}

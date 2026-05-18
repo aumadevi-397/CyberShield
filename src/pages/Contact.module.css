@@ -1,0 +1,158 @@
+.pageWrapper {
+  background-color:white;
+  color:black;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Main Layout */
+.mainContent {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+.heroSection {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.subtitle {
+  color:black;
+  font-size: 1.1rem;
+}
+
+/* Info Cards */
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.card {
+  background-color:darkblue;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#addressCard {
+  border: 1px solid #00e5ff;
+}
+
+.iconContainer {
+  background-color: rgba(0, 255, 204, 0.1);
+  color: #00ffcc;
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px auto;
+  font-size: 1.5rem;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.card a, .card p {
+  color: #00e5ff;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+/* Contact Form Section */
+.formSection {
+  background-color:navy;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.formSection h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formRow {
+  display: flex;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.formGroup label {
+  font-size: 0.85rem;
+  color:white;
+}
+
+.formGroup input, .formGroup textarea {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: #ffffff;
+  outline: none;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+}
+
+.formGroup input:focus, .formGroup textarea:focus {
+  border-color: white;
+}
+
+.submitBtn {
+  background-color:white;
+  color: #030014;
+  border: none;
+  border-radius: 25px;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: opacity 0.2s;
+}
+
+.submitBtn:hover {
+  opacity: 0.9;
+}
+
+/* Responsive Overrides */
+@media (max-width: 768px) {
+  .cardsContainer { grid-template-columns: 1fr; }
+  .formRow { flex-direction: column; }
+  .formSection { padding: 20px; }
+}
