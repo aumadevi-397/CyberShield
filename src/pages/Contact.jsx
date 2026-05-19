@@ -32,7 +32,7 @@ export default function ContactPage() {
       <main className={styles.mainContent}>
         {/* Hero Section */}
         <section className={styles.heroSection}>
-          <h1 className={styles.title}>Get in <span>Touch</span></h1>
+          <h1 className={styles.title}>Get in Touch</h1>
           <p className={styles.subtitle}>Have questions? Our team is ready to help. Reach out to us anytime.</p>
         </section>
 

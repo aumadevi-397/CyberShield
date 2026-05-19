@@ -1,6 +1,6 @@
 
 .footer {
-  background-color: #020225;
+  background-color:navy;
   padding: 80px 40px 20px;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .heading {
-  color: white;
+  color:white;
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 25px;
@@ -26,15 +26,16 @@
 .link {
   display: block;
   text-decoration: none;   
-  color: #8b97b5;          
-  font-size: 17px;
+  color: white;          
+  font-size: 15px;
   margin-bottom: 18px;
   transition: 0.3s;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .link:hover {
-  color: white;
-}
+  color:aqua;
+} 
 
 .divider {
   margin-top: 50px;

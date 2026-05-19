@@ -1,6 +1,6 @@
 .page {
-  background:navy;
-  color: #fff;
+  background:white;
+  color: black;
   font-family: Arial, sans-serif;
 }
 
@@ -9,15 +9,15 @@
   text-align: center;
   padding: 60px 20px;
 }
+.hero h1{
+  color:black;
+  font-size: 50px;
 
-.hero h1 span {
-  color: #00d9ff;
 }
-
 .hero p {
   max-width: 600px;
   margin: 10px auto;
-  color:white;
+  color:black;
 }
 
 /* MISSION */
@@ -35,7 +35,7 @@
   font-family: 'Times New Roman', Times, serif;
 }
 #para{
-  color: white;
+  color:black;
   font-style:normal;
 }
 
@@ -47,18 +47,26 @@
 }
 
 .card {
-  background:lightyellow;
+  background:lightgrey;
   padding: 20px;
   border-radius: 12px;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid white;
+}
+.card:hover {
+  border-color:black;
+  background:lightsteelblue;
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card);
 }
 
 .card h3 {
   color:black;
-  font-size: 28px;
+  font-size: 30px;
 }
-
+.card p{
+  color: black;
+}
 /* VALUES */
 .values {
   padding: 40px;
@@ -71,16 +79,25 @@
 }
 
 .valueCard {
-  background:lightyellow;
+  background:lightgray;
   padding: 20px;
   border-radius: 12px;
-  border: 1px solid #2a1b3d;
+  margin-top: 30px;
+
+}
+.valueCard:hover {
+  background:lightsteelblue;
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card);
+
 }
 
+
 .valueCard h4 {
-  color: black;
+  color:black;
+  font-size: 20px;
 }
 .valueCard p{
-  color:navy;
+  color:black;
   padding-top: 10px;
 }

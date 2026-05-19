@@ -12,7 +12,6 @@ export default function Navbar() {
 
         {/* Logo */}
         <div className={styles.logo}>
-          <div className={styles.logoIcon} />
           <span>CyberShield</span>
         </div>
 

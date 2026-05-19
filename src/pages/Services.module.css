@@ -28,10 +28,6 @@
   color: navy;
 }
 
-/* .highlight {
-  color;
-} */
-
 .subtitle {
   color: black;
   font-size: 1.1rem;
@@ -50,8 +46,8 @@
 
 /* Cards Design Structure */
 .serviceCard {
-  background-color:black;
-  /* border: 3px solid aqua; */
+  background-color:whitesmoke;
+  box-shadow: whitesmoke;
   border-radius: 12px;
   padding: 30px;
   display: flex;
@@ -60,8 +56,8 @@
 }
 
 .serviceCard:hover {
-  /* border-color: rgba(0, 229, 255, 0.3); */
   transform: translateY(-4px);
+  box-shadow: 0 2px 8px grey;
 }
 
 .cardHeader {
@@ -82,10 +78,11 @@
 .cardTitle {
   font-size: 1.25rem;
   font-weight: 600;
+  color:black;
 }
 
 .cardDescription {
-  color:white;
+  color:black;
   font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: 20px;
@@ -96,10 +93,10 @@
   list-style: none;
   padding: 0;
   margin: 0 0 30px 0;
+  color: black;
 }
 
 .featureItem {
-  /* color:aqua; */
   font-size: 0.9rem;
   margin-bottom: 8px;
   display: flex;
@@ -108,12 +105,12 @@
 }
 
 .bullet {
-  color:white;
+  color:black;
 }
 
 .learnMoreBtn {
-  background-color: #00e5ff;
-  color: #030014;
+  background-color:navy;
+  color:white;
   border: none;
   border-radius: 20px;
   padding: 12px;
@@ -124,14 +121,9 @@
   transition: background-color 0.2s ease;
 }
 
-.learnMoreBtn:hover {
-  background-color: #00ccff;
-}
-
 /* Call to Action Container */
 .ctaContainer {
-  background: black;
-  /* border: 1px solid rgba(0, 229, 255, 0.2); */
+  background: white;
   border-radius: 12px;
   padding: 40px;
   text-align: center;
@@ -141,16 +133,17 @@
 .ctaContainer h2 {
   font-size: 1.8rem;
   margin-bottom: 10px;
+  color: black;
 }
 
 .ctaContainer p {
-  color: #a0a0ba;
+  color:black;
   margin-bottom: 25px;
 }
 
 .ctaButton {
-  background-color:#00ccff;
-  color: #030014;
+  background-color:navy;
+  color:white;
   border: none;
   padding: 12px 30px;
   border-radius: 25px;

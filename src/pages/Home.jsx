@@ -22,10 +22,10 @@ const ChevronDownIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9" /></svg>
 );
 const StarIcon = () => (
-  <svg width="14" height="14" viewBox="0 0 24 24" fill="#00e5a0" stroke="#00e5a0" strokeWidth="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="gold" stroke="gold" strokeWidth="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
 );
 const CheckIcon = () => (
-  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00e5a0" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
 );
 const AlertIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10" /><line x1="12" y1="8" x2="12" y2="12" /><line x1="12" y1="16" x2="12.01" y2="16" /></svg>
@@ -240,11 +240,11 @@ function PlatformSection() {
 // ── Core Features ─────────────────────────────────────────────────────────────
 function CoreFeaturesSection() {
   return (
-    <section className={`${styles.section} ${styles.sectionGradient}`}>
+    <section id={`${styles.section} ${styles.sectionGradient}`}>
       <div className={styles.container}>
         <div className={styles.sectionHeader}>
-          <h2 id={styles.sectionTitle}>Core Features</h2>
-          <p id={styles.sectionSub}>Everything your security team needs in one unified platform.</p>
+          <h2 className={styles.sectionTitle}>Core Features</h2>
+          <p className={styles.sectionSub}>Everything your security team needs in one unified platform.</p>
         </div>
         <div className={styles.coreGrid}>
           {CORE_FEATURES.map((f, i) => (
@@ -337,7 +337,8 @@ function PricingSection() {
               <ul className={styles.pricingFeatures}>
                 {plan.features.map((f, j) => (
                   <li key={j} className={styles.pricingFeatureItem}>
-                    <CheckIcon /> {f}
+                    <CheckIcon />
+                     {f}
                   </li>
                 ))}
               </ul>
