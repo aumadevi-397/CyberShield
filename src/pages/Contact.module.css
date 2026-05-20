@@ -9,6 +9,7 @@
   max-width: 1200px;
   margin: auto;
   padding: 40px 20px;
+  margin-top: 50px;
 }
 
 .rightside {
@@ -24,7 +25,7 @@
 }
 
 .title {
-  color: #f7941d;
+  color: navy;
   font-size: 48px;
   margin-bottom: 20px;
 }
@@ -49,11 +50,11 @@
 .checkbox {
   width: 16px;
   height: 16px;
-  accent-color: #f7941d;
+  accent-color:Navy;
 }
 
 .headings {
-  color: #f7941d;
+  color:navy;
   font-size: 28px;
   margin: 0;
 }
@@ -77,7 +78,7 @@
   align-items: center;
 }
 .photo {
-  width: 400px;
+  width: 450px;
   height: 550px;
   object-fit: cover;
   border-radius: 10px;
@@ -110,7 +111,18 @@
   flex: 1;
 }
 
-.formGroup label {
+.mm input {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.formGroup label,.mm {
   margin-bottom: 10px;
   font-weight: 600;
 }

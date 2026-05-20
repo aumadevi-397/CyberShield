@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Contact.module.css";
+// import image from ".public/images/cybershieldimage1.jpg";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -93,12 +94,8 @@ export default function ContactPage() {
 
       
         <div className={styles.section2}>
+       <img  className={styles.photo} src="/cybershieldimage1.jpg" alt="test" />
 
-          <img
-            className={styles.photo}
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN2dr6I8wvIKjalaJVe2BBGV8jlkrrSayRpg&s"
-            alt="interior"
-          />
 
           <section className={styles.formSection}>
 
@@ -145,43 +142,18 @@ export default function ContactPage() {
                   onChange={handleChange}
                 />
               </div>
-
-          
-              <div className={styles.formGroup}>
-
-                <label className={styles.propertyTitle}>
-                  What is the size of the property?
-                </label>
-
-                <div className={styles.radioGroup}>
-                  <label>
-                    <input type="radio" name="propertySize" value="2 BHK" />
-                    2 BHK
-                  </label>
-
-                  <label>
-                    <input type="radio" name="propertySize" value="3 BHK" />
-                    3 BHK
-                  </label>
-
-                  <label>
-                    <input type="radio" name="propertySize" value="4 BHK" />
-                    4 BHK
-                  </label>
-
-                  <label>
-                    <input type="radio" name="propertySize" value="5+ BHK" />
-                    5+ BHK / Villa / Penthouse
-                  </label>
-
-                  <label>
-                    <input type="radio" name="propertySize" value="Other" />
-                    Other
-                  </label>
-                </div>
-
+              
+              <div className={styles.mm}>
+                 <label>Message</label>
+                 <input
+                  type="text"
+                  name="massage"
+                  placeholder="Message"
+                  value={formData.message}
+                  onChange={handleChange}
+                />
               </div>
-
+              
               <button type="submit" className={styles.submitBtn}>
                 Send Message
               </button>
