@@ -14,8 +14,6 @@
   align-items: center;
   justify-content: space-between;
 }
-
-/* LOGO */
 .logo {
   display: flex;
   align-items: center;
@@ -23,8 +21,6 @@
   font-size: 25px;
   font-style:normal;
 }
-
-/* NAV LINKS */
 .navLinks {
   display: flex;
   gap: 28px;
@@ -37,14 +33,11 @@
   transition: 0.3s;
 }
 
-/* RIGHT SIDE */
 .right {
   display: flex;
   align-items:center;
   gap: 12px;
 }
-
-/* MOBILE MENU BUTTON */
 .menuBtn {
   display: none;
   font-size: 22px;
@@ -53,8 +46,6 @@
   border: none;
   cursor: pointer;
 }
-
-/* MOBILE MENU */
 .mobileMenu {
   display: flex;
   flex-direction: column;
@@ -71,7 +62,7 @@
   
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 768px) {
   .navLinks,
   .searchBox {

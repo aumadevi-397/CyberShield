@@ -5,7 +5,6 @@ export default function About() {
   return (
     <div className={styles.page}>
       
-      {/* HERO */}
       <section className={styles.hero}>
         <h1>
           About Cybershield
@@ -17,7 +16,7 @@ export default function About() {
         </p>
       </section>
 
-      {/* MISSION */}
+ 
       <section className={styles.mission}>
         <h2>Our Mission</h2>
         <p id={styles.para}>
@@ -49,7 +48,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* VALUES */}
       <section className={styles.values}>
         <h2>Our Values</h2>
 

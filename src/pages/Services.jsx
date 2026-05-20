@@ -50,7 +50,7 @@ export default function Services() {
   return (
     <div className={styles.pageContainer}>
       <main className={styles.mainContent}>
-        {/* Title Section */}
+     
         <section className={styles.introSection}>
           <h1 className={styles.mainTitle}>Our <span className={styles.highlight}>Services</span></h1>
           <p className={styles.subtitle}>
@@ -58,7 +58,6 @@ export default function Services() {
           </p>
         </section>
 
-        {/* Services Grid */}
         <section className={styles.servicesGrid}>
           {servicesData.map((service) => (
             <div key={service.id} className={styles.serviceCard}>
@@ -78,8 +77,6 @@ export default function Services() {
             </div>
           ))}
         </section>
-
-        {/* Call to Action (CTA) */}
         <section className={styles.ctaContainer}>
           <h2>Ready to Secure Your Organization?</h2>
           <p>Let's schedule a free security assessment to understand your unique needs.</p>

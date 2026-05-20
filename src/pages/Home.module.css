@@ -29,7 +29,6 @@
   --transition: 0.22s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ── Base ───────────────────────────────────────────────────────────────────── */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -44,7 +43,6 @@
   line-height: 1.6;
 }
 
-/* ── Layout Helpers ─────────────────────────────────────────────────────────── */
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -91,8 +89,6 @@
   color: white;
 
 }
-
-/* ── Buttons ────────────────────────────────────────────────────────────────── */
 .btnPrimary {
   background: var(--accent);
   color:white;
@@ -141,7 +137,6 @@
   color: var(--accent);
 }
 
-/* ── Hero ───────────────────────────────────────────────────────────────────── */
 .hero {
   padding: 72px 24px 80px;
   max-width: 1200px;
@@ -234,7 +229,6 @@
   color: var(--text-muted);
 }
 
-/* ── Dashboard Widget ───────────────────────────────────────────────────────── */
 .dashWidget {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -355,7 +349,7 @@
   flex-shrink: 0;
 }
 
-/* ── Threat Cards ───────────────────────────────────────────────────────────── */
+
 .threatGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -395,7 +389,7 @@
   line-height: 1.6;
 }
 
-/* ── Platform Cards ─────────────────────────────────────────────────────────── */
+
 .platformGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -445,7 +439,6 @@
   line-height: 1.6;
 }
 
-/* ── Core Feature Cards ─────────────────────────────────────────────────────── */
 .coreGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -484,7 +477,6 @@
   line-height: 1.6;
 }
 
-/* ── Protect Cards ──────────────────────────────────────────────────────────── */
 .protectGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -524,7 +516,6 @@
   color: var(--text-secondary);
 }
 
-/* ── Testimonials ───────────────────────────────────────────────────────────── */
 .testimonialsGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -589,7 +580,6 @@
   color: var(--text-muted);
 }
 
-/* ── Pricing ────────────────────────────────────────────────────────────────── */
 .pricingGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -604,6 +594,7 @@
   padding: 32px 28px;
   position: relative;
   transition: var(--transition);
+  
 }
 .pricingCard:hover {
   transform: translateY(-4px);
@@ -614,6 +605,7 @@
   border-color: var(--accent-border);
   background: linear-gradient(180deg, rgba(0, 229, 160, 0.05) 0%, var(--bg-card) 100%);
   box-shadow: 0 0 40px rgba(0, 229, 160, 0.1);
+  
 }
 .pricingHighlighted:hover {
   box-shadow: 0 0 60px rgba(0, 229, 160, 0.2), var(--shadow-card);
@@ -625,14 +617,16 @@
   left: 50%;
   transform: translateX(-50%);
   background: var(--accent);
-  color: #071210;
+  color:white;
   font-size: 0.72rem;
   font-weight: 800;
+  font-family: 'Times New Roman', Times, serif;
   padding: 4px 14px;
   border-radius: 100px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   white-space: nowrap;
+ 
 }
 
 .pricingName {
@@ -698,7 +692,6 @@
 .icon {
   color: red;
 }
-/* ── FAQ ────────────────────────────────────────────────────────────────────── */
 .faqList {
   max-width: 720px;
   margin: 0 auto;
@@ -752,7 +745,6 @@
   border-top: 1px solid var(--border);
 }
 
-/* ── CTA Section ────────────────────────────────────────────────────────────── */
 .ctaSection {
   padding: 0 24px 80px;
   max-width: 1140px;
@@ -822,7 +814,6 @@
 .btnOutlineLight{
   color:black;
 }
-/* ── Responsive ─────────────────────────────────────────────────────────────── */
 @media (max-width: 1024px) {
   .coreGrid { grid-template-columns: repeat(2, 1fr); }
 }

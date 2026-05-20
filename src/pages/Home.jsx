@@ -2,7 +2,6 @@
 import { useState } from "react";
 import styles from "./Home.module.css";
 
-// ── Icons ────────────────────────────────────────────────────────────────────
 const ShieldIcon = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
 );
@@ -58,7 +57,6 @@ const BarChartIcon = () => (
   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="20" x2="18" y2="10" /><line x1="12" y1="20" x2="12" y2="4" /><line x1="6" y1="20" x2="6" y2="14" /></svg>
 );
 
-// ── Data ──────────────────────────────────────────────────────────────────────
 const THREAT_STATS = [
   { icon: <ZapIcon />, stat: "1 cyber attack every 30 seconds", desc: "The threat landscape is growing exponentially." },
   { icon: <MonitorIcon />, stat: "Traditional security tools are slow, reactive, and complex", desc: "Legacy tools slow down your defenses and drain your team." },
@@ -133,7 +131,7 @@ const FAQS = [
   { q: "Is it compliant with regulations?", a: "CyberShield supports GDPR, HIPAA, SOC 2, PCI-DSS, and ISO 27001 compliance frameworks out of the box." },
 ];
 
-// ── Dashboard Widget ──────────────────────────────────────────────────────────
+
 function DashboardWidget() {
   const bars = [40, 65, 50, 80, 60, 90, 75, 55, 85, 70];
   return (
@@ -160,7 +158,6 @@ function DashboardWidget() {
   );
 }
 
-// ── Hero ──────────────────────────────────────────────────────────────────────
 function Hero() {
   return (
     <section className={styles.hero}>
@@ -191,7 +188,7 @@ function Hero() {
   );
 }
 
-// ── Threat Section ────────────────────────────────────────────────────────────
+
 function ThreatSection() {
   return (
     <section className={styles.section}>
@@ -214,7 +211,6 @@ function ThreatSection() {
   );
 }
 
-// ── Platform Section ──────────────────────────────────────────────────────────
 function PlatformSection() {
   return (
     <section className={`${styles.section} ${styles.sectionDark}`}>
@@ -237,7 +233,6 @@ function PlatformSection() {
   );
 }
 
-// ── Core Features ─────────────────────────────────────────────────────────────
 function CoreFeaturesSection() {
   return (
     <section id={`${styles.section} ${styles.sectionGradient}`}>
@@ -260,7 +255,6 @@ function CoreFeaturesSection() {
   );
 }
 
-// ── Who We Protect ────────────────────────────────────────────────────────────
 function WhoWeProtect() {
   return (
     <section className={styles.section}>
@@ -283,7 +277,6 @@ function WhoWeProtect() {
   );
 }
 
-// ── Testimonials ──────────────────────────────────────────────────────────────
 function TestimonialsSection() {
   return (
     <section className={`${styles.section} ${styles.sectionDark}`}>
@@ -314,7 +307,6 @@ function TestimonialsSection() {
   );
 }
 
-// ── Pricing ───────────────────────────────────────────────────────────────────
 function PricingSection() {
   return (
     <section className={styles.section}>
@@ -350,7 +342,6 @@ function PricingSection() {
   );
 }
 
-// ── FAQ ───────────────────────────────────────────────────────────────────────
 function FAQSection() {
   const [openIdx, setOpenIdx] = useState(0);
   return (
@@ -381,8 +372,6 @@ function FAQSection() {
     </section>
   );
 }
-
-// ── CTA Section ───────────────────────────────────────────────────────────────
 function CTASection() {
   return (
     <section className={styles.ctaSection}>
@@ -402,7 +391,6 @@ function CTASection() {
   );
 }
 
-// ── Main Export ───────────────────────────────────────────────────────────────
 export default function Home() {
   return (
     <main className={styles.root}>

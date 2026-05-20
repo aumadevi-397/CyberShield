@@ -10,12 +10,11 @@ export default function Navbar() {
     <header className={styles.header}>
       <div className={styles.container}>
 
-        {/* Logo */}
         <div className={styles.logo}>
           <span>CyberShield</span>
         </div>
 
-        {/* Desktop Nav */}
+   
         <nav className={styles.navLinks}>
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about">About</NavLink>
@@ -23,7 +22,6 @@ export default function Navbar() {
           <NavLink to="/contact">Contact</NavLink>
         </nav>
 
-        {/* Right Section */}
         <div className={styles.right}>
         
           <button
@@ -35,7 +33,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {open && (
         <div className={styles.mobileMenu}>
           <NavLink to="/" onClick={() => setOpen(false)}>Home</NavLink>

@@ -24,7 +24,6 @@ const FOOTER_COLUMNS = [
     heading: "Resources",
     links: [
       { label: "Documentation", href: "/" },
-      // { label: "Blog", href: "/blog" },
       { label: "Case Studies", href: "/" },
       { label: "API Reference", href: "/" },
     ],
